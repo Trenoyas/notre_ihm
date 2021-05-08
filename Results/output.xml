@@ -1,192 +1,192 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.0.1 (Python 3.9.4 on win32)" generated="20210508 02:42:40.883" rpa="false" schemaversion="2">
+<robot generator="Robot 4.0.1 (Python 3.9.4 on win32)" generated="20210508 02:45:53.293" rpa="false" schemaversion="2">
 <suite id="s1" name="Main" source="C:\developpement\notre_ihm\tests\main.robot">
 <kw name="Begin Web Test" library="common" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>about:blank</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20210508 02:42:41.068" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20210508 02:42:41.068" endtime="20210508 02:42:42.195"/>
+<msg timestamp="20210508 02:45:53.481" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20210508 02:45:53.481" endtime="20210508 02:45:54.611"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210508 02:42:42.196" endtime="20210508 02:42:42.314"/>
+<status status="PASS" starttime="20210508 02:45:54.611" endtime="20210508 02:45:54.731"/>
 </kw>
-<status status="PASS" starttime="20210508 02:42:41.068" endtime="20210508 02:42:42.314"/>
+<status status="PASS" starttime="20210508 02:45:53.480" endtime="20210508 02:45:54.731"/>
 </kw>
 <test id="s1-t1" name="Voir produits Disponibles">
 <kw name="Charger la page web" library="PageAccueil">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${google_url}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20210508 02:42:42.316" level="INFO">Opening url 'https://www.google.com/'</msg>
-<status status="PASS" starttime="20210508 02:42:42.315" endtime="20210508 02:42:42.667"/>
+<msg timestamp="20210508 02:45:54.732" level="INFO">Opening url 'https://www.google.com/'</msg>
+<status status="PASS" starttime="20210508 02:45:54.732" endtime="20210508 02:45:55.069"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <arg>1000</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20210508 02:42:42.668" endtime="20210508 02:42:42.669"/>
+<status status="PASS" starttime="20210508 02:45:55.069" endtime="20210508 02:45:55.070"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>J'accepte</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20210508 02:42:42.669" endtime="20210508 02:42:42.684"/>
+<status status="PASS" starttime="20210508 02:45:55.070" endtime="20210508 02:45:55.082"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//*[@id="zV9nZe"]/div</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210508 02:42:42.684" level="INFO">Clicking element 'xpath=//*[@id="zV9nZe"]/div'.</msg>
-<status status="PASS" starttime="20210508 02:42:42.684" endtime="20210508 02:42:42.720"/>
+<msg timestamp="20210508 02:45:55.083" level="INFO">Clicking element 'xpath=//*[@id="zV9nZe"]/div'.</msg>
+<status status="PASS" starttime="20210508 02:45:55.083" endtime="20210508 02:45:55.112"/>
 </kw>
-<status status="PASS" starttime="20210508 02:42:42.315" endtime="20210508 02:42:42.721"/>
+<status status="PASS" starttime="20210508 02:45:54.732" endtime="20210508 02:45:55.112"/>
 </kw>
 <kw name="Chercher le site web" library="PageAccueil">
 <kw name="Clear Element Text" library="SeleniumLibrary">
 <arg>name=q</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" starttime="20210508 02:42:42.721" endtime="20210508 02:42:42.797"/>
+<status status="PASS" starttime="20210508 02:45:55.113" endtime="20210508 02:45:55.144"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name=q</arg>
 <arg>amazon</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210508 02:42:42.797" level="INFO">Typing text 'amazon' into text field 'name=q'.</msg>
-<status status="PASS" starttime="20210508 02:42:42.797" endtime="20210508 02:42:43.006"/>
+<msg timestamp="20210508 02:45:55.144" level="INFO">Typing text 'amazon' into text field 'name=q'.</msg>
+<status status="PASS" starttime="20210508 02:45:55.144" endtime="20210508 02:45:55.288"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>name=btnK</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210508 02:42:43.007" level="INFO">Clicking element 'name=btnK'.</msg>
-<status status="PASS" starttime="20210508 02:42:43.006" endtime="20210508 02:42:44.084"/>
+<msg timestamp="20210508 02:45:55.289" level="INFO">Clicking element 'name=btnK'.</msg>
+<status status="PASS" starttime="20210508 02:45:55.288" endtime="20210508 02:45:56.379"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Images</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20210508 02:42:44.084" endtime="20210508 02:42:44.096"/>
+<status status="PASS" starttime="20210508 02:45:56.379" endtime="20210508 02:45:56.393"/>
 </kw>
-<status status="PASS" starttime="20210508 02:42:42.721" endtime="20210508 02:42:44.096"/>
+<status status="PASS" starttime="20210508 02:45:55.113" endtime="20210508 02:45:56.394"/>
 </kw>
 <kw name="Naviguer vers le site Amazon" library="PageAccueil">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//*[@id="tads"]/div/div/div/div[1]/a/div[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210508 02:42:44.097" level="INFO">Clicking element 'xpath=//*[@id="tads"]/div/div/div/div[1]/a/div[1]'.</msg>
-<status status="PASS" starttime="20210508 02:42:44.097" endtime="20210508 02:42:44.958"/>
+<msg timestamp="20210508 02:45:56.394" level="INFO">Clicking element 'xpath=//*[@id="tads"]/div/div/div/div[1]/a/div[1]'.</msg>
+<status status="PASS" starttime="20210508 02:45:56.394" endtime="20210508 02:45:57.194"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Commandes</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20210508 02:42:44.958" endtime="20210508 02:42:45.112"/>
+<status status="PASS" starttime="20210508 02:45:57.194" endtime="20210508 02:45:57.333"/>
 </kw>
-<status status="PASS" starttime="20210508 02:42:44.097" endtime="20210508 02:42:45.112"/>
+<status status="PASS" starttime="20210508 02:45:56.394" endtime="20210508 02:45:57.333"/>
 </kw>
 <kw name="Rechercher le produit" library="PageAccueil">
 <kw name="Clear Element Text" library="SeleniumLibrary">
 <arg>xpath=//*[@id="twotabsearchtextbox"]</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" starttime="20210508 02:42:45.112" endtime="20210508 02:42:45.246"/>
+<status status="PASS" starttime="20210508 02:45:57.333" endtime="20210508 02:45:57.407"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>xpath=//*[@id="twotabsearchtextbox"]</arg>
 <arg>rj45 cable</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210508 02:42:45.246" level="INFO">Typing text 'rj45 cable' into text field 'xpath=//*[@id="twotabsearchtextbox"]'.</msg>
-<status status="PASS" starttime="20210508 02:42:45.246" endtime="20210508 02:42:45.328"/>
+<msg timestamp="20210508 02:45:57.407" level="INFO">Typing text 'rj45 cable' into text field 'xpath=//*[@id="twotabsearchtextbox"]'.</msg>
+<status status="PASS" starttime="20210508 02:45:57.407" endtime="20210508 02:45:57.544"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="nav-search-submit-button"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210508 02:42:45.329" level="INFO">Clicking element '//*[@id="nav-search-submit-button"]'.</msg>
-<status status="PASS" starttime="20210508 02:42:45.328" endtime="20210508 02:42:46.580"/>
+<msg timestamp="20210508 02:45:57.544" level="INFO">Clicking element '//*[@id="nav-search-submit-button"]'.</msg>
+<status status="PASS" starttime="20210508 02:45:57.544" endtime="20210508 02:45:58.940"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <arg>1000</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20210508 02:42:46.580" endtime="20210508 02:42:46.582"/>
+<status status="PASS" starttime="20210508 02:45:58.940" endtime="20210508 02:45:58.941"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="sp-cc-accept"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210508 02:42:46.582" level="INFO">Clicking element '//*[@id="sp-cc-accept"]'.</msg>
-<status status="PASS" starttime="20210508 02:42:46.582" endtime="20210508 02:42:46.674"/>
+<msg timestamp="20210508 02:45:58.941" level="INFO">Clicking element '//*[@id="sp-cc-accept"]'.</msg>
+<status status="PASS" starttime="20210508 02:45:58.941" endtime="20210508 02:45:59.025"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Commandes</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20210508 02:42:46.674" endtime="20210508 02:42:46.698"/>
+<status status="PASS" starttime="20210508 02:45:59.026" endtime="20210508 02:45:59.044"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>NONE</arg>
 <arg>PAGE_DOWN</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20210508 02:42:46.699" level="INFO">Sending key(s) ('PAGE_DOWN',) to page.</msg>
-<msg timestamp="20210508 02:42:46.699" level="INFO">Pressing special key PAGE_DOWN to browser.</msg>
-<msg timestamp="20210508 02:42:46.699" level="INFO">Releasing special key PAGE_DOWN.</msg>
-<status status="PASS" starttime="20210508 02:42:46.698" endtime="20210508 02:42:46.707"/>
+<msg timestamp="20210508 02:45:59.044" level="INFO">Sending key(s) ('PAGE_DOWN',) to page.</msg>
+<msg timestamp="20210508 02:45:59.044" level="INFO">Pressing special key PAGE_DOWN to browser.</msg>
+<msg timestamp="20210508 02:45:59.044" level="INFO">Releasing special key PAGE_DOWN.</msg>
+<status status="PASS" starttime="20210508 02:45:59.044" endtime="20210508 02:45:59.050"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <arg>1000</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20210508 02:42:46.707" endtime="20210508 02:42:46.708"/>
+<status status="PASS" starttime="20210508 02:45:59.050" endtime="20210508 02:45:59.051"/>
 </kw>
-<status status="PASS" starttime="20210508 02:42:45.112" endtime="20210508 02:42:46.708"/>
+<status status="PASS" starttime="20210508 02:45:57.333" endtime="20210508 02:45:59.051"/>
 </kw>
-<status status="PASS" starttime="20210508 02:42:42.314" endtime="20210508 02:42:46.709"/>
+<status status="PASS" starttime="20210508 02:45:54.731" endtime="20210508 02:45:59.051"/>
 </test>
 <test id="s1-t2" name="Choisir son produit">
 <kw name="Choisir Produit Interessant" library="PageProduit">
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>//*[@id="search"]/div[1]/div/div[1]/div/span[3]/div[2]/div[3]/div/span/div/div/div/div/div[2]/h2/a</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20210508 02:42:46.711" level="INFO">Clicking link '//*[@id="search"]/div[1]/div/div[1]/div/span[3]/div[2]/div[3]/div/span/div/div/div/div/div[2]/h2/a'.</msg>
-<status status="PASS" starttime="20210508 02:42:46.711" endtime="20210508 02:42:49.457"/>
+<msg timestamp="20210508 02:45:59.053" level="INFO">Clicking link '//*[@id="search"]/div[1]/div/div[1]/div/span[3]/div[2]/div[3]/div/span/div/div/div/div/div[2]/h2/a'.</msg>
+<status status="PASS" starttime="20210508 02:45:59.053" endtime="20210508 02:46:01.178"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Ajouter au panier</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20210508 02:42:49.457" endtime="20210508 02:42:49.524"/>
+<status status="PASS" starttime="20210508 02:46:01.178" endtime="20210508 02:46:01.228"/>
 </kw>
-<status status="PASS" starttime="20210508 02:42:46.710" endtime="20210508 02:42:49.525"/>
+<status status="PASS" starttime="20210508 02:45:59.053" endtime="20210508 02:46:01.228"/>
 </kw>
 <kw name="Chosir taille cable" library="PageProduit">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="a-autoid-12-announce"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210508 02:42:49.526" level="INFO">Clicking element '//*[@id="a-autoid-12-announce"]'.</msg>
-<status status="PASS" starttime="20210508 02:42:49.526" endtime="20210508 02:42:49.742"/>
+<msg timestamp="20210508 02:46:01.229" level="INFO">Clicking element '//*[@id="a-autoid-12-announce"]'.</msg>
+<status status="PASS" starttime="20210508 02:46:01.229" endtime="20210508 02:46:01.385"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Ajouter au panier</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20210508 02:42:49.742" endtime="20210508 02:42:49.854"/>
+<status status="PASS" starttime="20210508 02:46:01.385" endtime="20210508 02:46:01.432"/>
 </kw>
-<status status="PASS" starttime="20210508 02:42:49.525" endtime="20210508 02:42:49.854"/>
+<status status="PASS" starttime="20210508 02:46:01.229" endtime="20210508 02:46:01.432"/>
 </kw>
 <kw name="Ajouter produit au panier" library="PageProduit">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="add-to-cart-button"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210508 02:42:49.856" level="INFO">Clicking element '//*[@id="add-to-cart-button"]'.</msg>
-<status status="PASS" starttime="20210508 02:42:49.855" endtime="20210508 02:42:50.961"/>
+<msg timestamp="20210508 02:46:01.433" level="INFO">Clicking element '//*[@id="add-to-cart-button"]'.</msg>
+<status status="PASS" starttime="20210508 02:46:01.433" endtime="20210508 02:46:02.445"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Ajouté au panier</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20210508 02:42:50.961" endtime="20210508 02:42:51.002"/>
+<status status="PASS" starttime="20210508 02:46:02.445" endtime="20210508 02:46:02.462"/>
 </kw>
-<status status="PASS" starttime="20210508 02:42:49.855" endtime="20210508 02:42:51.002"/>
+<status status="PASS" starttime="20210508 02:46:01.433" endtime="20210508 02:46:02.462"/>
 </kw>
-<status status="PASS" starttime="20210508 02:42:46.710" endtime="20210508 02:42:51.003"/>
+<status status="PASS" starttime="20210508 02:45:59.052" endtime="20210508 02:46:02.463"/>
 </test>
 <kw name="End Web Test" library="common" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210508 02:42:51.004" endtime="20210508 02:42:53.798"/>
+<status status="PASS" starttime="20210508 02:46:02.465" endtime="20210508 02:46:04.640"/>
 </kw>
-<status status="PASS" starttime="20210508 02:42:51.004" endtime="20210508 02:42:53.798"/>
+<status status="PASS" starttime="20210508 02:46:02.464" endtime="20210508 02:46:04.640"/>
 </kw>
-<status status="PASS" starttime="20210508 02:42:40.884" endtime="20210508 02:42:53.798"/>
+<status status="PASS" starttime="20210508 02:45:53.294" endtime="20210508 02:46:04.640"/>
 </suite>
 <statistics>
 <total>
