@@ -19,7 +19,12 @@ Choisir son produit
     PageProduit.Chosir taille cable
     PageProduit.Ajouter produit au panier
 
-Proceder au paiement
-    Panier.Inspecter panier
-    Panier.Passer commande
+#Proceder au paiement
+#    Panier.Inspecter panier
+#    Panier.Passer commande
+
+
+
+
+
 

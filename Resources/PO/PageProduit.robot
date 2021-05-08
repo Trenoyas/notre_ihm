@@ -3,7 +3,7 @@ Library  SeleniumLibrary
 
 *** Keywords ***
 Choisir Produit Interessant
-    Click Link    //*[@id="search"]/div[1]/div/div[1]/div/span[3]/div[2]/div[6]/div/span/div/div/div[2]/h2/a
+    Click Element    //*[@id="search"]/div[1]/div/div[1]/div/span[3]/div[2]/div[6]/div/span/div/div/div[2]/h2/a
     Wait Until Page Contains    Ajouter au panier
 
 Chosir taille cable
